@@ -1,0 +1,47 @@
+.filtersPanel {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+
+  background: radial-gradient(circle at top left, #434343, #000000);
+
+  box-shadow:
+    inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.5),
+    10px 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.dropdownsContent {
+  display: flex;
+  gap: 0 10px;
+}
+
+.priceRange {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .filtersPanel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 776px) {
+  .priceRange,
+  .dropdownsContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px 0;
+  }
+}

@@ -1,0 +1,31 @@
+.inputField {
+  display: flex;
+  align-items: center;
+  gap: 0 7px;
+}
+.input {
+  width: 100%;
+  max-width: 195px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+.label {
+  font-size: 13px;
+  color: #fff;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  width: 100%;
+  max-width: max-content;
+}

@@ -1,0 +1,16 @@
+.starFilter {
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.star {
+  font-size: 24px;
+  color: #ccc;
+  transition: color 0.2s;
+
+  &.filled {
+    color: gold;
+  }
+}
